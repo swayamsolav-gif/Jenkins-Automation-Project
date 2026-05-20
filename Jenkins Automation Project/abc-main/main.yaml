@@ -1,0 +1,6 @@
+- name: Setup Jenkins
+  hosts: localhost
+  become: yes
+  roles:
+    # install and configure jenkins
+    - devops.projects.jenkins
